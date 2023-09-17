@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 45rem;
+    height: 33rem;
+    overflow: hidden;
+    margin: 4rem auto;
+    background: grey;
+}
+.slides_img{
+    width: 29rem;
+    height: 29rem;
+    margin: auto;
+}
+.slides_radio_show{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.radio_show{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 0.1rem solid black;
+    margin: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.radio_show:hover{
+    background: black;
+}
+input{
+    display: none;
+}
