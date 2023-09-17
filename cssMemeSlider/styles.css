@@ -1,39 +1,82 @@
-*{
+body{
     margin: 0;
     padding: 0;
+    background: darkgray;
 }
-
 .wrapper{
-    width: 45rem;
-    height: 33rem;
+    width: 31rem;
+    margin: 0 auto;
+}
+.slides_all{
+    width: 28rem;
+    height: 28rem;
     overflow: hidden;
-    margin: 4rem auto;
-    background: grey;
 }
-.slides_img{
-    width: 29rem;
-    height: 29rem;
-    margin: auto;
+.center{
+    margin: 1rem auto;
 }
-.slides_radio_show{
+.view_input{
     display: flex;
     margin-top: 1rem;
     justify-content: end;
-    margin-right: 1rem;
+
     margin-bottom: 1rem;
+
 }
-.radio_show{
+.view_item{
     width: 0.6rem;
     height: 0.6rem;
     border-radius: 50%;
-    border: 0.1rem solid black;
-    margin: 0.4rem;
+    border: 0.1rem solid white;
+    background: white;
+    margin-left: 0.7rem;
     cursor: pointer;
     transition: 0.2s;
 }
-.radio_show:hover{
-    background: black;
+.view_item:hover{
+    background: none;
 }
-input{
-    display: none;
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: 0.4s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#var1:checked ~ .one{
+    margin-left: 0;
+}
+#var2:checked ~ .one{
+    margin-left: -25%;
+}
+#var3:checked ~ .one{
+    margin-left: -50%;
+}
+#var4:checked ~ .one{
+    margin-left: -75%;
+}
+.under_slides{
+    display: flex;
+    justify-content: space-between;
+width: 28rem;
+    margin: 0 auto;
+    align-self: center;
+    align-items: center;
+}
+p{
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+
 }
