@@ -37,8 +37,7 @@ body{
     background: none;
 }
 input[name="r"]{
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 .slides{
     width: 400%;
